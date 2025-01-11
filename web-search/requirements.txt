@@ -1,0 +1,1 @@
+griptape[drivers-web-search-duckduckgo,drivers-web-search-exa,drivers-web-search-tavily]>=1.1.1
