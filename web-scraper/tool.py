@@ -1,6 +1,7 @@
 import os
 
 from griptape.tools import WebScraperTool
+from griptape.loaders import WebLoader
 from griptape.drivers import (
     TrafilaturaWebScraperDriver,
     ProxyWebScraperDriver,
@@ -28,4 +29,6 @@ def init_tool() -> WebScraperTool:
         }
         driver = ProxyWebScraperDriver(proxies=proxies, params=params)
 
-    return WebScraperTool(web_scraper_driver=driver)
+    return WebScraperTool(
+        web_loader=WebLoader(web_scraper_driver=driver),
+    )
