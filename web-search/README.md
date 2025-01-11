@@ -4,7 +4,7 @@
 
 This is a cloud-hosted version of the Griptape framework's [Web Search Tool](https://docs.griptape.ai/stable/griptape-tools/official-tools/web-search-tool/).
 
-On deployment, the tool will check the environment to decide which [Web Search Driver](https://docs.griptape.ai/stable/griptape-framework/drivers/web-search-drivers/) to use, in the following priority order:
+The tool will dynamically check the environment to decide which [Web Search Driver](https://docs.griptape.ai/stable/griptape-framework/drivers/web-search-drivers/) to use, in the following priority order:
 
 - If `TAVILY_API_KEY` is present in the environment, the tool will use the [Tavily Web Search Driver](https://docs.griptape.ai/stable/griptape-framework/drivers/web-search-drivers#tavily).
 - If `EXA_API_KEY` is present in the environment, the tool will use the [Exa Web Search Driver](https://docs.griptape.ai/stable/griptape-framework/drivers/web-search-drivers#exa).
