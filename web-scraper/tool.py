@@ -2,13 +2,13 @@ import os
 
 from griptape.tools import WebScraperTool
 from griptape.drivers import (
-    MarkdownifyWebScraperDriver,
+    TrafilaturaWebScraperDriver,
     ProxyWebScraperDriver,
 )
 
 
 def init_tool() -> WebScraperTool:
-    driver = MarkdownifyWebScraperDriver()
+    driver = TrafilaturaWebScraperDriver()
     # Check the environment variable to determine which driver to use
     if (zenrows_api_key := os.getenv("ZENROWS_API_KEY")) is not None:
         # best effort default params
