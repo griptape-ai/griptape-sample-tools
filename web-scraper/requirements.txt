@@ -1,0 +1,1 @@
+griptape[drivers-web-scraper-trafilatura]>=1.1.1
