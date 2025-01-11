@@ -1,5 +1,7 @@
 # Web Search Tool
 
+[![Deploy_to_Griptape](https://github.com/griptape-ai/griptape-cloud/assets/2302515/4fd57873-5c93-44a8-8fa3-ac1bf7d73bcc)](https://cloud.griptape.ai/tools/create?sample-name=web-search&type=sample)
+
 This is a cloud-hosted version of the Griptape framework's [Web Search Tool](https://docs.griptape.ai/stable/griptape-tools/official-tools/web-search-tool/).
 
 On deployment, the tool will check the environment to decide which [Web Search Driver](https://docs.griptape.ai/stable/griptape-framework/drivers/web-search-drivers/) to use, in the following priority order:
