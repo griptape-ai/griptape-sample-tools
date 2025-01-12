@@ -30,6 +30,7 @@ class GmailTool(BaseTool):
     )
     def list_unread_emails(self, params: dict) -> ListArtifact:
         """Lists unread emails from Gmail inbox using service account credentials."""
+        return ListArtifact([])
         credentials = service_account.Credentials.from_service_account_info(
             SERVICE_ACCOUNT_INFO,
             scopes=['https://www.googleapis.com/auth/gmail.readonly']
