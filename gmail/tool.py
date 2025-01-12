@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 from typing import List, Dict
 import os
 from schema import Schema
-from griptape.artifacts import ListArtifact, DictArtifact
+from griptape.artifacts import ListArtifact, JsonArtifact
 from griptape.tools import BaseTool
 from griptape.utils.decorators import activity
 
@@ -64,7 +64,7 @@ class GmailTool(BaseTool):
                 'subject': next(h['value'] for h in headers if h['name'] == 'Subject'),
                 'has_attachments': bool(msg['payload'].get('parts', []))
             }
-            emails.append(DictArtifact(email_data))
+            emails.append(JsonArtifact(email_data))
             
         return ListArtifact(emails)
 
