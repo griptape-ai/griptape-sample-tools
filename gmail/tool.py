@@ -24,7 +24,8 @@ SERVICE_ACCOUNT_INFO = {
 class GmailTool(BaseTool):
     @activity(
         config={
-            "description": "Lists unread emails from Gmail inbox using service account credentials"
+            "description": "Lists unread emails from Gmail inbox using service account credentials",
+            "schema": Schema({}),
         }
     )
     def list_unread_emails(self, params: dict) -> ListArtifact:
