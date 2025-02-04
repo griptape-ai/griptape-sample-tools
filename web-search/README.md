@@ -1,6 +1,6 @@
 # Web Search Tool
 
-[![Deploy_to_Griptape](https://github.com/griptape-ai/griptape-cloud/assets/2302515/4fd57873-5c93-44a8-8fa3-ac1bf7d73bcc)](https://cloud.griptape.ai/tools/create?sample-name=web-search&type=sample)
+[![Deploy_to_Griptape](https://github.com/griptape-ai/griptape-cloud/assets/2302515/4fd57873-5c93-44a8-8fa3-ac1bf7d73bcc)](https://cloud.griptape.ai/tools/create/web-search)
 
 This is a cloud-hosted version of the Griptape framework's [Web Search Tool](https://docs.griptape.ai/stable/griptape-tools/official-tools/web-search-tool/).
 
