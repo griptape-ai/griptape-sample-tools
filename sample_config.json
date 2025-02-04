@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Calculator Tool",
+        "description": "Can be used for computing simple numerical or algebraic calculations in Python",
+        "folderName": "calculator",
+        "requiredEnv": []
+    },
+    {
+        "name": "Datetime Tool",
+        "description": "Can be used to return current date and time.",
+        "folderName": "datetime",
+        "requiredEnv": []
+    },
+    {
+        "name": "Random Number Generator Tool",
+        "description": "Generates a random number between 0 and 1 with a specified amount of decimals.",
+        "folderName": "random_number_generator",
+        "requiredEnv": []
+    },
+    {
+        "name": "Web Scraper Tool",
+        "description": "This tool enables LLMs to scrape web pages for full text, summaries, authors, titles, and keywords.",
+        "folderName": "web_scraper",
+        "requiredEnv": []
+    },
+    {
+        "name": "Web Search Tool",
+        "description": "This tool enables LLMs to search the web.",
+        "folderName": "web_search",
+        "requiredEnv": []
+    }
+]
