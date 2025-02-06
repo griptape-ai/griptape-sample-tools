@@ -1,0 +1,14 @@
+version: 1.0
+runtime: python3
+runtime_version: 3.12
+build:
+  requirements_file: requirements.txt
+  cache_build_dependencies: # Configures caching (for faster deployments!)
+    enabled: true # Toggles caching
+    watched_files: # List of files that will trigger a full rebuild of the Structure
+      - requirements.txt
+      - tool_config.yaml
+run:
+  tool_file: tool.py  # The file containing the tool, defaults to tool.py if not given
+  init_tool_file: tool.py  # The file containing the init_tool function, defaults to tool.py if not given
+  init_tool_function: init_tool  # The function to call to initialize the tool. Required
