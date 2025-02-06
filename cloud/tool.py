@@ -47,7 +47,7 @@ class AssistantTool(BaseTool):
             )
             response.raise_for_status()
             result = response.json()
-            return TextArtifact(f"Assistant created successfully with ID: {result['id']}")
+            return TextArtifact(f"Assistant created successfully with ID: {result['assistant_id']}")
         except requests.RequestException as e:
             return ErrorArtifact(f"API error creating assistant: {str(e)}")
         except Exception as e:
