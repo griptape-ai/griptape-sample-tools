@@ -28,5 +28,11 @@
     "description": "This tool enables LLMs to search the web.",
     "folderName": "web-search",
     "requiredEnv": []
+  },
+  {
+    "name": "Griptape Cloud Tool",
+    "description": "This tool enables LLMs to create and delete assistants in Griptape Cloud.",
+    "folderName": "cloud",
+    "requiredEnv": ["GRIPTAPE_API_KEY", "API_BASE_URL"]
   }
 ]
