@@ -23,27 +23,27 @@ class AssistantTool(BaseTool):
             "schema": Schema(
                 {
                     Literal(
-                        "request_content",
-                        description="Assistant configuration content to create a new assistant"
-                    ): {
-                        "name": str,
-                        "description": str | None,
-                        "input": str | None,
-                        "knowledge_base_ids": list[str] | None,
-                        "ruleset_ids": list[str] | None,
-                        "structure_ids": list[str] | None,
-                        "tool_ids": list[str] | None,
-                    },
+                        "name",
+                        description="Name of the assistant"
+                    ): str,
+                    Literal(
+                        "description",
+                        description="Description of the assistant"
+                    ): str
                 }
             )
         }
     )
     def create_assistant(self, params: dict) -> BaseArtifact:
         try:
-            request_content = params["values"]["request_content"]
+            name = params["values"]["name"]
+            description = params["values"]["description"]
             response = self.session.post(
                 f"{self.base_url}/assistants",
-                json=request_content
+                json={
+                    "name": name,
+                    "description": description
+                }
             )
             response.raise_for_status()
             result = response.json()
